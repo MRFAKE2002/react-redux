@@ -82,4 +82,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 At first we must install react redux 
 
-### `npm install react-redux`
+### `npm install @reduxjs/toolkit react-redux`
