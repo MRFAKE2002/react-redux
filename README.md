@@ -3,6 +3,10 @@
 This is the Redux tutorials and youtube course link:
 https://youtube.com/playlist?list=PLprvbQiR3cN9a0PnMYuulyfqbwCmAPt81&si=x1w7VMAYC2VEhLWK
 
+## Introduce
+
+In this project we want to learn how we can use react redux in our projects; So we make the counter to show it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
