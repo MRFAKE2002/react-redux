@@ -1,3 +1,8 @@
+# Learn React Redux
+
+This is the Redux tutorials and youtube course link:
+https://youtube.com/playlist?list=PLprvbQiR3cN9a0PnMYuulyfqbwCmAPt81&si=x1w7VMAYC2VEhLWK
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
