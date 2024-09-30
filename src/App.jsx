@@ -1,18 +1,16 @@
 // components
-import DownBox1 from './components/downBox/DownBox1';
-import UpBox1 from './components/upBox/UpBox1';
-
-
+import DownBox1 from "./components/downBox/DownBox1";
+import UpBox1 from "./components/upBox/UpBox1";
 
 function App() {
   return (
     <div className="App">
+      <h1>Home</h1>
       <UpBox1 />
 
-      <br/>
+      <br />
 
-    <DownBox1 />
-
+      <DownBox1 />
     </div>
   );
 }
