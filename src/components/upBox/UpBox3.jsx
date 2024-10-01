@@ -1,4 +1,5 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { counterSlicer } from "../../app/counterSlicer";
 
 function UpBox3(params) {
 
@@ -17,11 +18,22 @@ function UpBox3(params) {
     '
   */
 
+  // az 'dispatch' baraye seda zadan oun 'action' ke male ye slice khas az store redux hast estefade mikonim.
+  const dispatch = useDispatch()
+
 
   return (
     <>
       <div style={{backgroundColor:'white', padding:'30px'}}>
         <h3>UpBox3</h3>
+
+        {/* 
+          ma ye dokme mizarim migim zamani ke rush click shod bia ba estefade az 'dispatch' oun 'action' ke mikhaim ro seda bezan.
+        */}
+        <button onClick={() => dispatch(counterSlicer.actions.increment())}>increment</button>
+
+        <br/>
+
         <h1>counter:{counter}</h1>
       </div>
     </>

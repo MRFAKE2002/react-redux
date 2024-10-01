@@ -6,7 +6,7 @@ import { createSlice } from "@reduxjs/toolkit";
   besazim; har slice yek moteghyer dare ke 3 argoman migire:
   1- avali 'name' ke esm slice ro dakhelesh mizarim.
   2- dovomi 'initialState' ke meghdar avalie ro migire.
-  3- sevomi 'reducer' ke har chandta 'action' ya hamun tavabeyi ke baes taghyir mizan state mishan ro dakhelesh mizarim.
+  3- sevomi 'reducers' ke har chandta 'action' ya hamun tavabeyi ke baes taghyir mizan state mishan ro dakhelesh mizarim.
 */
 
 export const counterSlicer = createSlice({
