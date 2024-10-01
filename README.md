@@ -87,4 +87,8 @@ At first we must install react redux
 ## Project Steps
 
 In this project we use react toolkit redux; So we need to make the directory in name 'store.js' to make our redux configuration.
-We make the store variable to putting data into it and send it in 'index.js' and use 'Provide' to send 'store' variable in throughout project.
+We make the store variable to putting data into it and send it in 'index.js' and use 'Provide' to send 'store' variable in throughout project; actually the reducer in configureStore will rerender the state when change value in it.
+In redux we must make 'slice' for each state that we want use in throughout the project so we make the 'counterSlice' and add it in redux store.
+In 'counterSlice' we have to make initial state value and then make 'reducers' to add our 'actions' that will be changed our state.
+We will have access into our 'counterSlicer' by using the 'useSelector' from react redux and get our state value from redux store.
+We can call our 'counterSlice' actions by using the 'useDispatch' from react redux to call the action that we want.
