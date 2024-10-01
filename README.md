@@ -83,3 +83,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 At first we must install react redux 
 
 ### `npm install @reduxjs/toolkit react-redux`
+
+## Project Steps
+
+In this project we use react toolkit redux; So we need to make the directory in name 'store.js' to make our redux configuration.
+We make the store variable to putting data into it and send it in 'index.js' and use 'Provide' to send 'store' variable in throughout project.
