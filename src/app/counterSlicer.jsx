@@ -15,5 +15,14 @@ export const counterSlicer = createSlice({
     // yek argoman value migire ke meghdar avalie darunesh gharar midim.
     value: 0,
   },
-  reducer: {}
+  reducers: {
+    /*
+      alan avalin 'action' khodemun ro misazim ke mikhad meghdar state ro afzayesh bede.
+      dar vorudi yek 'state' migire ke akharin vaziat ya meghdar 'value' moteghayer 'counterSlicer' ro migire.
+      be shekl arrow function minevisim va dar khoruji meghdar jadid 'value' state ro bar migardune.
+    */
+    increment: (state) => {
+      state.value += 1;
+    },
+  }
 })
