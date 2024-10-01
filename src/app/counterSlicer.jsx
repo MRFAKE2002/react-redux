@@ -10,7 +10,7 @@ import { createSlice } from "@reduxjs/toolkit";
 */
 
 export const counterSlicer = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState: {
     // yek argoman value migire ke meghdar avalie darunesh gharar midim.
     value: 0,
@@ -24,5 +24,8 @@ export const counterSlicer = createSlice({
     increment: (state) => {
       state.value += 1;
     },
-  }
-})
+    decrement: (state) => {
+      state.value -= 1;
+    },
+  },
+});
