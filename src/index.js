@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+  /*
+    Dar inja ma bayad az 'Provider' estefade konim ta betunim 'store' redux ro ke sakhtim va tamam data dar oun vojud dare be kol porojhe befrestim.
+    dakhal 'Provider' yek 'store' migire ke manzur hamun data koli redux mishe pas ma ham bayad moteghayer 'store' ro ke sakhtim behesh bedim.
+    alan tamame data ke dakhel 'store' hast ro dar tamame porojhe darim.
+  */
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
