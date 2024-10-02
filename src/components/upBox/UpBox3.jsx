@@ -1,8 +1,9 @@
 // libraries
 import { useDispatch, useSelector } from "react-redux";
 
-// components
-import { counterSlice } from "../../app/counterSlice";
+// redux slice
+import { counterSlice, increment, incrementByAmount } from "../../app/counterSlice";
+import { childAction, userSlice } from "../../app/userSlice";
 
 function UpBox3(params) {
   /*
@@ -20,6 +21,9 @@ function UpBox3(params) {
     '
   */
 
+  // in moteghayer daraye list 'children' ke marbut be userSlice ast
+  const userChildren = useSelector((state) => state.user.children);
+
   // az 'dispatch' baraye seda zadan oun 'action' ke male ye slice khas az store redux hast estefade mikonim.
   const dispatch = useDispatch();
 
@@ -31,17 +35,27 @@ function UpBox3(params) {
         {/* 
           ma ye dokme mizarim migim zamani ke rush click shod bia ba estefade az 'dispatch' oun 'action' ke mikhaim ro seda bezan.
         */}
-        <button onClick={() => dispatch(counterSlice.actions.increment())}>
+        <button onClick={() => dispatch(increment())}>
           increment
         </button>
 
         <br />
 
         <button
-          onClick={() => dispatch(counterSlicer.actions.incrementByAmount(5))}
+          onClick={() => dispatch(incrementByAmount(5))}
         >
           increment by amount
         </button>
+
+        <br />
+
+        <button onClick={() => dispatch(childAction(["mamad", "amir"]))}>
+          children
+        </button>
+
+        {userChildren.map((child, index) => (
+          <h3 key={index}>{child}</h3>
+        ))}
 
         <h1>counter:{counter}</h1>
       </div>

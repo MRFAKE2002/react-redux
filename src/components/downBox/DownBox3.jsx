@@ -1,8 +1,8 @@
 // libraries
 import { useDispatch, useSelector } from "react-redux";
 
-// components
-import { counterSlice } from "../../app/counterSlice";
+// redux slice
+import { counterSlice, decrement } from "../../app/counterSlice";
 
 function DownBox3(params) {
   /*
@@ -30,7 +30,7 @@ function DownBox3(params) {
         {/* 
           ma ye dokme mizarim migim zamani ke rush click shod bia ba estefade az 'dispatch' oun 'action' ke mikhaim ro seda bezan.
         */}
-        <button onClick={() => dispatch(counterSlice.actions.decrement())}>
+        <button onClick={() => dispatch(decrement())}>
           decrement
         </button>
 
