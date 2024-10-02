@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from "react-redux";
 
 // components
-import { counterSlicer } from "../../app/counterSlicer";
+import { counterSlice } from "../../app/counterSlice";
 
 function UpBox3(params) {
   /*
@@ -31,13 +31,15 @@ function UpBox3(params) {
         {/* 
           ma ye dokme mizarim migim zamani ke rush click shod bia ba estefade az 'dispatch' oun 'action' ke mikhaim ro seda bezan.
         */}
-        <button onClick={() => dispatch(counterSlicer.actions.increment())}>
+        <button onClick={() => dispatch(counterSlice.actions.increment())}>
           increment
         </button>
 
         <br />
 
-        <button onClick={() => dispatch(counterSlicer.actions.incrementByAmount(5))}>
+        <button
+          onClick={() => dispatch(counterSlicer.actions.incrementByAmount(5))}
+        >
           increment by amount
         </button>
 

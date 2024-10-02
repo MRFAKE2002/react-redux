@@ -9,7 +9,7 @@ import { createSlice } from "@reduxjs/toolkit";
   3- sevomi 'reducers' ke har chandta 'action' ya hamun tavabeyi ke baes taghyir mizan state mishan ro dakhelesh mizarim.
 */
 
-export const counterSlicer = createSlice({
+export const counterSlice = createSlice({
   name: "counter",
   initialState: {
     // yek argoman value migire ke meghdar avalie darunesh gharar midim.

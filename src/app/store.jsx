@@ -2,7 +2,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 // components
-import { counterSlicer } from "./counterSlicer";
+import { counterSlice } from "./counterSlice";
 
 /* 
   baraye inke configuration redux ro besazim bayad ye 'store.jsx' besazim. dar inja miaim ye moteghayer misazim va
@@ -12,7 +12,6 @@ import { counterSlicer } from "./counterSlicer";
 */
 
 export const store = configureStore({
-
   /* 
     Tamame data va slice hayi ke dar kol porojhe gharare estefade beshe dakhel in moteghayer mizarim.
     'action' mishe oun function ya tabeyi ke baes taghyir vaziat ya moteghayer mored nazar mishe; masalan tu moteghayer 'counter' 'action' mishe
@@ -27,6 +26,6 @@ export const store = configureStore({
       dar inja ma tamame slicer hayi ke misazim ro gharar midim va age bekhaim dar tamame porojhe estefade konim az esm 'counter'
       estefade mikonim.
     */
-    counter: counterSlicer.reducer,
+    counter: counterSlice.reducer,
   },
 });

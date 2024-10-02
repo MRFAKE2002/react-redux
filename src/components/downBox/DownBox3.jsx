@@ -2,10 +2,10 @@
 import { useDispatch, useSelector } from "react-redux";
 
 // components
-import { counterSlicer } from "../../app/counterSlicer";
+import { counterSlice } from "../../app/counterSlice";
 
 function DownBox3(params) {
-    /*
+  /*
     Dar inja baraye inke ma betunim az redux va data darun state estefade komim bayad az 'useSelector' ke male react redux
     estefade konim va dar vorudi tamame data 'store' ke reducer va slice ha dakhelesh hast ro be ma mide va ma dar khoruji
     migim meghdar value oun slice ke mikhaim ro behemun bede.
@@ -30,7 +30,7 @@ function DownBox3(params) {
         {/* 
           ma ye dokme mizarim migim zamani ke rush click shod bia ba estefade az 'dispatch' oun 'action' ke mikhaim ro seda bezan.
         */}
-        <button onClick={() => dispatch(counterSlicer.actions.decrement())}>
+        <button onClick={() => dispatch(counterSlice.actions.decrement())}>
           decrement
         </button>
 
