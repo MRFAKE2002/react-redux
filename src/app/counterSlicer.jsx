@@ -27,5 +27,11 @@ export const counterSlicer = createSlice({
     decrement: (state) => {
       state.value -= 1;
     },
+    /*
+      Dar 'action' zir ma mitunim behesh vorudi pas bedim ke behesh 'payload' migan. in vorudi mitune har chizi bashe hata object.
+    */
+    incrementByAmount: (state, action) => {
+      state.value += action.payload;
+    },
   },
 });

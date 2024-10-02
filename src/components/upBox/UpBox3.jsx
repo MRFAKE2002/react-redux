@@ -37,6 +37,10 @@ function UpBox3(params) {
 
         <br />
 
+        <button onClick={() => dispatch(counterSlicer.actions.incrementByAmount(5))}>
+          increment by amount
+        </button>
+
         <h1>counter:{counter}</h1>
       </div>
     </>
