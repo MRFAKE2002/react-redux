@@ -1,8 +1,9 @@
 // libraries
 import { configureStore } from "@reduxjs/toolkit";
 
-// components
+// redux slice
 import { counterSlice } from "./counterSlice";
+import userReducer from "./userSlice";
 
 /* 
   baraye inke configuration redux ro besazim bayad ye 'store.jsx' besazim. dar inja miaim ye moteghayer misazim va
@@ -27,5 +28,6 @@ export const store = configureStore({
       estefade mikonim.
     */
     counter: counterSlice.reducer,
+    user: userReducer,
   },
 });
